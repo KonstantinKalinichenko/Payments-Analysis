@@ -20,6 +20,7 @@ Andrew’s balance.
 
 The broadcaster can request the cash-out (a.k.a. withdrawal, redeem) of diamonds💎 to his bank account. The
 conversion rate from diamonds💎 to USD💲 is x0.005 (divided by 200)
+
 **Example:** Andrew has 25,000 diamonds💎 on his balance. He requested the cash-out of 20,000 diamonds💎(it is
 possible to request the cash-out not for all diamonds💎). The total amount of USD💲would be 20,000/200=$100.
 
@@ -29,14 +30,38 @@ possible to request the cash-out not for all diamonds💎). The total amount of 
 redeem request timestamp, creator id, creator registration date, amount in diamonds, amount in usd usd,
 country of creator.
 
+Example rows:
+
+redeem_id	timestamp	creator_id	registration_date	amount_in_diamonds	amount_in_dollar	country_code
+8862668	2023-06-30 05:25:09 UTC	3196313945	2023-06-19	17800	89	VN
+8871850	2023-06-30 23:50:42 UTC	2872999101	2022-05-22	36400	182	RU
+
 **fact_gifts**: Contain the information about all gifts which were sent in Streamora, such as sender id (gifter),
 recipient id (creator), timestamp of gift, coins spent (by gifter), diamonds earned (by creator).
+
+Example rows:
+
+sender_account_id	receipt_account_id	timestamp	coins_spent	diamonds_earned
+2535498772	2738098788	2023-05-06 08:57:19 UTC	1200	840
+3083868987	3107575159	2023-05-06 08:57:05 UTC	358	250
 
 **fact_purchases**: Contains the information about all successful purchasers of gifters such as purchase id,
 account id (gifter), country of purchaser (gifter), timestamp of purchase, usd amount, coins amount.
 
+Example rows:
+
+purchase_id	account_id	timestamp	price_usd	coins_purchased
+45807332	2572397152	2023-01-10 19:07:19 UTC	0.99	100
+45807250	3067879511	2023-01-10 19:05:24 UTC	0.99	200
+
 **dim_user_country**: Contains the information about the user (both creators and gifters) and their country:
 account_id and country.
+
+Example rows:
+
+account_id	country
+2572397152	Saudi Arabia
+3067879511	Malaysia
 
 <img width="742" height="395" alt="schema" src="https://github.com/user-attachments/assets/a6945cea-9273-4873-9af9-ece00847e66c" />
 
