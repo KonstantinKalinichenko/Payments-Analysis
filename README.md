@@ -76,13 +76,13 @@ Example rows:
 
 Below is an overview of the main directories and files in this repository:
 
-Payments-Analysis/
-├── data/
-├── results/
-├── sql/
-├── schema.png
-├── tasks.md
-└── README.md
+Payments-Analysis/  
+├── data/  
+├── results/  
+├── sql/  
+├── schema.png  
+├── tasks.md  
+└── README.md  
 
 **data**:
 
