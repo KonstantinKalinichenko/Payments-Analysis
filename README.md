@@ -1,6 +1,10 @@
 # Payments-Analysis
 
-A project to analyze payments on a fictitious streaming platform using SQL.
+**Project Overview**
+
+This project focuses on payment analysis for a fictional streaming platform (Streamora) using SQL.
+It models the flow of virtual currency purchases, gift transactions between viewers and streamers, internal balances, and creator payouts, and uses SQL to extract insights and key metrics from the data.
+
 **Streamora** is an online live-streaming platform.
 In Streamora broadcasters (a.k.a. Streamers, creators, BCs) make live-streaming and the viewers (a.k.a. Gifters, gift senders) send them gifts.
 Viewers purchased in-app currency (coins 🪙) for real money.
@@ -66,6 +70,42 @@ Example rows:
 | ---------- | ------------ |
 | 2572397152 | Saudi Arabia |
 | 3067879511 | Malaysia     |
+
+
+**Project Structure:**
+
+Below is an overview of the main directories and files in this repository:
+
+Payments-Analysis/
+├── data/
+├── results/
+├── sql/
+├── schema.png
+├── tasks.md
+└── README.md
+
+**data**:
+
+This directory contains the raw input data used for the payment analysis of a fictional streaming platform called Streamora.
+
+**results:**
+
+The results/ folder stores the outputs of the analysis, such as aggregated tables, query results, reports, or exported data produced as part of the SQL analysis.
+
+**sql:**
+
+This directory contains SQL scripts used to analyze the data.
+The scripts typically include queries for data extraction, joins, aggregations, and calculations of business metrics related to payments, revenue, and user behavior.
+
+**schema.png:**
+
+schema.png is a database schema diagram that visualizes the data model.
+It shows tables, relationships, and key fields, helping to understand how the data is structured and connected.
+
+**tasks.md:**
+
+The tasks.md file describes the project tasks and analytical goals.
+It outlines the business questions to be answered and the objectives of the analysis, providing context for the SQL queries and results.
 
 <img width="742" height="395" alt="schema" src="https://github.com/user-attachments/assets/a6945cea-9273-4873-9af9-ece00847e66c" />
 
